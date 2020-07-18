@@ -4,6 +4,7 @@ p {
 }
 
 .submitButton{
-    background: none;
-    border: 1px;
+    background-color: #006c81 ;
+    border: solid 1px;
+    color : white;
 }

@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 32%;
+    margin: 5px;
+    border: black solid 1px;
+    text-align: justify;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+
+
+  .footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }
