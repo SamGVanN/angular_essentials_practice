@@ -7,4 +7,4 @@ Composant = Classe associée à un template avec lequel elle intéragit via une 
     - Une application Angular est un arbre de composant (un peu comme des poupées russes)
 
 
-    
+Pour faire apparaitre un composant, on l'inclu dans le composant racine (en tt cas de cas précis) app.component.html
