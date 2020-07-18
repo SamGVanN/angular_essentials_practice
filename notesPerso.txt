@@ -36,6 +36,8 @@ Pour une img, on utilise le chemin relatif à partir du dossier assets
 
 
 app.module.ts
+@NgModule
+sert à importer et exporter des éléments au sein de notre application / regrouper nos composants etc pour notre module pour les transmettre au compilateur
 "declarations"
     regroupe l'ensemble des éléments de notre code source, enfin, pas tous,
     mais une bonne partie des éléments de notre code source, à savoir les composants, les directives et les pipes
