@@ -1,0 +1,10 @@
+Fichier de notes du cours prises à la volée
+(pourrait être utile)
+
+
+Composant = Classe associée à un template avec lequel elle intéragit via une APi spécifique:
+    - Le composant définit généralement une portion d'UI
+    - Une application Angular est un arbre de composant (un peu comme des poupées russes)
+
+
+    
