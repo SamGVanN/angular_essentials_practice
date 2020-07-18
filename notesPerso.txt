@@ -21,3 +21,11 @@ mais en tt cas à savoir: on peut passer une variable d'un controller à un comp
 
 
 Angular permet les évenement navigateur genre "click", mais on peut créer nos propres évenements (tout l'intérêt est là).
+
+
+
+
+Les fichiers .spec.ts servent à faire des tests
+
+
+Pour une img, on utilise le chemin relatif à partir du dossier assets
