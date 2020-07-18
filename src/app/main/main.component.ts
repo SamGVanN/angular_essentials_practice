@@ -14,4 +14,8 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  userClick(){
+    console.log("clicked");
+  }
+
 }

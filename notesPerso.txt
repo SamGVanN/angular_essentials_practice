@@ -19,3 +19,5 @@ admetons que l'on ai un attribut "user", on peut lui affecter une valeur, ici de
 On utilisera cette fonctionnalité plutôt avec les directives,
 mais en tt cas à savoir: on peut passer une variable d'un controller à un composant grâce à cette syntaxe
 
+
+Angular permet les évenement navigateur genre "click", mais on peut créer nos propres évenements (tout l'intérêt est là).
