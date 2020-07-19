@@ -6,14 +6,15 @@ Projet Angular, pas AngularJS! Qui sont différent
 
 Les fichiers .spec.ts servent à faire des tests
 
+
+@décorateur -> fonctionnalité TypeScript, pas javascript. Un décorateur permet d’ajouter un comportement spécial ou des métadonnées à un élément du code.
+
+------------------------
+
 Composants = Classe associée à un template avec lequel elle intéragit via une APi spécifique:
     - Le composant définit généralement une portion d'UI
     - Une application Angular est un arbre de composant (un peu comme des poupées russes)
 
-Modules = Containers qui représentent une partie indépendant du code:
-    - Permettent de grouper des composants, directives, pipes, et services
-    - Peuvent être combinés à d'autres modules pour créer une application
-    /!\ Différencier modules JavaScript et Angular
 
 
 Pour faire apparaitre un composant, on l'inclu dans le composant racine (en tt cas de cas précis) app.component.html
@@ -34,12 +35,33 @@ Angular permet les évenement navigateur genre "click", mais on peut créer nos 
 Pour une img, on utilise le chemin relatif à partir du dossier assets
 
 
+------------------------
+
+Modules = Containers qui représentent une partie indépendant du code:
+    - Permettent de grouper des composants, directives, pipes, et services
+    - Peuvent être combinés à d'autres modules pour créer une application
+    /!\ Différencier modules JavaScript et Angular
+
 
 app.module.ts
 @NgModule
-sert à importer et exporter des éléments au sein de notre application / regrouper nos composants etc pour notre module pour les transmettre au compilateur
+sert à importer et exporter des éléments au sein de notre application. Il regroupe nos composants etc pour notre module pour les transmettre au compilateur
 "declarations"
     regroupe l'ensemble des éléments de notre code source, enfin, pas tous,
     mais une bonne partie des éléments de notre code source, à savoir les composants, les directives et les pipes
  "imports"
     Dans imports, nous avons les imports d'autres modules qui vont être utiles dans notre application
+
+Quand on crée un composant via la CLI, il est ajouté dans la bonne propriété, celle des composants (import le composant)
+
+
+
+------------------------
+
+DOM = représentation objet de notre HTML
+
+Directives = Classe qui associe un comportement particulier à un élément du DOM:
+    - Composant : attache un template à un élément
+            (dans notre app.component.html, quand on appel <app-main></app-main>, on attache le template de main à la page,,donc ça affiche les éléments de notre main.component.html)
+    - Directives Structurelles : changent la disposition d'un DOM
+    - Directives d'attributs : changent le comportement d'un élément du DOM
