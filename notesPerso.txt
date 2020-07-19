@@ -74,3 +74,12 @@ Directives Structurelles:
     https://angular.io/guide/structural-directives
     *ngIf conditionne l'affichage d'un élément par exemple
 
+
+
+Directives D'attributs:
+    syntaxe : nomDeLaDirective, [nomDeLaDirective]
+    existantes: ngStyle, ngClass
+    Modifie simplement certain attributs des éléments du DOM. "An Attribute directive changes the appearance or behavior of a DOM element."
+    https://angular.io/guide/attribute-directives
+    Il est possible de créer nos propres directives d'attribut
+    ngClass: Le but est d'ajouter ou supprimer dynamiquement une classe à un élément

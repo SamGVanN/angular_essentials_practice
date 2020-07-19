@@ -10,8 +10,9 @@ export class MainComponent implements OnInit {
   user: string = "Samuel";
 
   // elements = [1, 2, 3, 4, 5];
-
   elements = ["Sam", "JoLrigolo", "Cocotte", 4, 5];
+
+  color = true;
 
   constructor() { }
 
@@ -20,6 +21,7 @@ export class MainComponent implements OnInit {
 
   userClick(){
     console.log("clicked");
+    //this.color = !this.color;
   }
 
 }
