@@ -62,6 +62,15 @@ DOM = représentation objet de notre HTML
 
 Directives = Classe qui associe un comportement particulier à un élément du DOM:
     - Composant : attache un template à un élément
-            (dans notre app.component.html, quand on appel <app-main></app-main>, on attache le template de main à la page,,donc ça affiche les éléments de notre main.component.html)
+            (dans notre app.component.html, quand on appel <app-main></app-main>, on attache le template de main à la page, donc ça affiche les éléments de notre main.component.html)
     - Directives Structurelles : changent la disposition d'un DOM
     - Directives d'attributs : changent le comportement d'un élément du DOM
+
+
+Directives Structurelles:
+    syntaxe : *nomDeLaDirective
+    existantes: *ngFor, *nglf, *ngSwitch
+    "They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements."
+    https://angular.io/guide/structural-directives
+    *ngIf conditionne l'affichage d'un élément par exemple
+

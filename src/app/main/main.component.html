@@ -3,14 +3,11 @@
     Hello {{user}} !
 </p>
 
-<!--correspond à onclick="test()" mais en angular.
-Lors du click, on appel une fonction callback appelée test dans notre composant associée à notre template-->
-
-
-
 <div class="row">
     <div class="column">
         <button class="submitButton" (click)="userClick()">Click</button>
+            <!--correspond à onclick="test()" mais en angular.
+            Lors du click, on appel une fonction callback appelée test dans notre composant associée à notre template-->
         <p>Inspecter la page et voir dans la console (pour débeuger vite fait ça peut etre utile, as usual)</p>
     </div>
     
@@ -25,6 +22,6 @@ Lors du click, on appel une fonction callback appelée test dans notre composant
     </div>
 </div>
 
-<div>
-    <p>text apres la row</p>
+<div *ngFor="let element of elements; let i" >
+    Hello {{ i }}
 </div>
