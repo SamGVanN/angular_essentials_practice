@@ -25,3 +25,6 @@
 <div *ngFor="let element of elements; let i" [ngClass]="{'highlightedAltern': i % 2 === 0}" > Hello {{ i }} </div>
 
 <div [ngClass]="{'highlighted': color}" >Directive</div>
+
+<div> Date format standard : {{maDate  }} </div>
+<div> Date formatée via le pipe : {{maDate  | date:"short"}} </div>

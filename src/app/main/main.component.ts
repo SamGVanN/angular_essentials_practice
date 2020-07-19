@@ -14,6 +14,8 @@ export class MainComponent implements OnInit {
 
   color = true;
 
+  maDate = new Date();
+
   constructor() { }
 
   ngOnInit(): void {

@@ -83,3 +83,15 @@ Directives D'attributs:
     https://angular.io/guide/attribute-directives
     Il est possible de créer nos propres directives d'attribut
     ngClass: Le but est d'ajouter ou supprimer dynamiquement une classe à un élément
+
+
+
+
+------------------------
+
+
+Pipes = Fonction qui retourne un output à partir d'un input et qui peut être déclarée dans un tempalte.
+        Sert à formater des variables dans un format qui nous convient, directement dans le template.
+        syntaxe : ....|.... (oui, on utilise un pipe pour les pipes, easy!)
+        Pipes fournis par Angular: https://angular.io/api -> dans TYPE, sélectionner Pipe
+        https://angular.io/api?type=pipe
