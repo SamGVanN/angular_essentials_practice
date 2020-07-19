@@ -22,6 +22,6 @@
     </div>
 </div>
 
-<div *ngFor="let element of elements; let i" > Hello {{ i }} </div>
+<div *ngFor="let element of elements; let i" [ngClass]="{'highlightedAltern': i % 2 === 0}" > Hello {{ i }} </div>
 
 <div [ngClass]="{'highlighted': color}" >Directive</div>

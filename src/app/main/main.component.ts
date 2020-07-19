@@ -10,7 +10,7 @@ export class MainComponent implements OnInit {
   user: string = "Samuel";
 
   // elements = [1, 2, 3, 4, 5];
-  elements = ["Sam", "JoLrigolo", "Cocotte", 4, 5];
+  elements = ["Sam", "JoLrigolo", "Cocotte", 4, 5,6,8,9,10];
 
   color = true;
 
