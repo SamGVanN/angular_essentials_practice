@@ -50,6 +50,16 @@ li a:hover {
 
 
 
+.exercice{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-style: inset;
+  border-color: green;
+  
+}
+
+
+
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;

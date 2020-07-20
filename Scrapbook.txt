@@ -121,3 +121,13 @@ Par contre faut MAJ noter module pour l'importer (le NgModule) OPTIONNEL parce q
 Une fois que c'est fait, on peut naviguer : http://localhost:4200/user
 
 ------------------------
+
+
+Formulaires:
+Permet de lier un input à une variable, et d'actualiser cette variable en fonction de l'input entré par l'utilisateur
+
+Avant tout: importer le module (donc dans le app.module.ts)
+import { FormsModule } from '@angular/forms';
+puis ajouter FormsModule dans la aprtie imports du NgModule
+
+[(NgModel)] -> [] pour variable et () pour évent. En gros NgModel est une variable et l'évent c'est que le user rentre qq chose dans un input 
