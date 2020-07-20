@@ -10,10 +10,30 @@
 <div class="exercice" style="padding: 10px;">
     <h2>FormControll</h2>
     <p>Comment mettre en place un formulaire reactive forms, ici juste avec un input FormControll</p>
-    <input [formControl]="userInputRF">
-    Test: {{userInputRF.value}}
+    <p><br>
+        On utilise la directive formControl pour binder le champ
+        <br>
+    </p>
+    <input [formControl]="userInputFC">
+    Test: {{userInputFC.value}}
 </div>
     
 
+<div class="exercice" style="padding: 10px;">
+    <h2>Formulaire avec FormGroup</h2>
+    <p>Comment mettre en place un formulaire reactive forms, ici avec un FormGroup</p>
+    <p><br>
+    On utilise la directive FormGroup pour créer le formulaire
+    <br>
+    On utilise les directive formControllNAme au lieu de formControll par contre, pour pouvoir spécifier le nom de l'attribut correspondant
+    </p>
 
+    <form [formGroup]="userForm"> <!-- attention le nom de la directive est case sensitive, et c'est un f minuscule -->
+        <input formControlName="name" > <!-- on passe plus une ionstance de formControll mais on passe une string, name, donc pas besoin des crochets -->
+        <input formControlName="email" >
+        <input formControlName="age" >
+        <button (click)="showForm()">Submit</button>
+    </form>
+    <p>Submit visible dans la console. Voir "value"</p>
+</div>
 

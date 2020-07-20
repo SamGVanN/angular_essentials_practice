@@ -10,9 +10,22 @@ export class UserComponent implements OnInit {
 
   userInput = "Hello";
 
-  userInputRF = new FormControl('hello again');
+  userInputFC = new FormControl('hello again');
+
+
+  userForm = new FormGroup({
+    name : new FormControl(''),
+    email: new FormControl(''),
+    age: new FormControl(''),
+  })
+
 
   constructor() { }
+
+
+  showForm(){
+    console.log(this.userForm);
+  }
 
   ngOnInit(): void {
   }
