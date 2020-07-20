@@ -1,30 +1,56 @@
 
-<p > 
-    Hello {{user}} !
-</p>
+<div class="exercice">
+    <p > 
+        Hello {{user}} !
+    </p>
+</div>
 
-<div class="row">
-    <div class="column">
-        <button class="submitButton" (click)="userClick()">Click</button>
-            <!--correspond à onclick="test()" mais en angular.
-            Lors du click, on appel une fonction callback appelée test dans notre composant associée à notre template-->
-        <p>Inspecter la page et voir dans la console (pour débeuger vite fait ça peut etre utile, as usual)</p>
-    </div>
-    
-    <div class="column" style="text-align: center; ">
-        <img src="assets/imageTest.jpg" style="max-width:90%; height:auto;" >
-    </div>
 
-    <div class="column">
-        <p>Ceci est une 3e colonne dont le css se trouve dans style.css, donc css global est utilisé même si on est dans le main.component.html :D
-            <br> Par contre, la priorité est à main.componant.css si les 2 styles sont en conflits
-        </p>
+<div class="exercice">
+    <div class="row">
+        <div class="column">
+            <button class="submitButton" (click)="userClick()">Click</button>
+                <!--correspond à onclick="test()" mais en angular.
+                Lors du click, on appel une fonction callback appelée test dans notre composant associée à notre template-->
+            <p>Inspecter la page et voir dans la console (pour débeuger vite fait ça peut etre utile, as usual)</p>
+        </div>
+        
+        <div class="column" style="text-align: center; ">
+            <img src="assets/imageTest.jpg" style="max-width:90%; height:auto;" >
+        </div>
+
+        <div class="column">
+            <p>Ceci est une 3e colonne dont le css se trouve dans style.css, donc css global est utilisé même si on est dans le main.component.html :D
+                <br> Par contre, la priorité est à main.componant.css si les 2 styles sont en conflits
+            </p>
+        </div>
     </div>
 </div>
 
-<div *ngFor="let element of elements; let i" [ngClass]="{'highlightedAltern': i % 2 === 0}" > Hello {{ i }} </div>
 
-<div [ngClass]="{'highlighted': color}" >Directive</div>
+<div class="exercice">
+    <div *ngFor="let element of elements; let i" [ngClass]="{'highlightedAltern': i % 2 === 0}" > Hello {{ i }} </div>
 
-<div> Date format standard : {{maDate  }} </div>
-<div> Date formatée via le pipe : {{maDate  | date:"short"}} </div>
+    <div [ngClass]="{'highlighted': color}" >Directive</div>
+</div>
+
+<div class="exercice">
+    <div> Date format standard : {{maDate  }} </div>
+    <div> Date formatée via le pipe : {{maDate  | date:"short"}} </div>
+</div>
+
+<div class="exercice">
+    <div class="row">
+    
+        <div class="column_images">
+            <img src="assets/imageTest.jpg" style="max-width:90%; height:auto;" >
+        </div>
+        <div class="column_images">
+            <img src="assets/bebe-labrador.jpg" style="max-width:90%; height:auto;" >
+        </div>
+        <div class="column_images">
+            <img src="assets/chaton-768x512.jpeg" style="max-width:90%; height:auto;" >
+        </div>
+    </div>
+</div>
+

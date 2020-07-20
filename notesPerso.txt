@@ -95,3 +95,18 @@ Pipes = Fonction qui retourne un output à partir d'un input et qui peut être d
         syntaxe : ....|.... (oui, on utilise un pipe pour les pipes, easy!)
         Pipes fournis par Angular: https://angular.io/api -> dans TYPE, sélectionner Pipe
         https://angular.io/api?type=pipe
+        
+
+
+------------------------
+
+
+Routing
+
+RouterModule = ça permet à l'utilisateur de naviger sur l'application. Le routeur interprète une URL afin de rendre les composants pertinents
+C'est en utilisant correctement le routing qu'on empêche le navigateur de charger tout une page. Or en Angular on dev une SPA donc ce serait con de tout recharger sans raison.
+    Configuration : on le configure dans le module avec un tableau d'objets Route. Le routeur supporte les URL dynamique 
+
+
+
+

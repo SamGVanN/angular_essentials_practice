@@ -1,4 +1,14 @@
 
+
+.exercice{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: inset;
+    border-color: green;
+    
+}
+
+
 p {
     font-family: monospace;
 }
@@ -18,3 +28,13 @@ p {
 .highlightedAltern{
     background-color: cadetblue;
 }
+
+
+.column_images {
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin: 5px;
+    border: 1px;
+    text-align: justify;
+  }
