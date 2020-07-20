@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-user',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
 
   userInput = "Hello";
+
+  userInputRF = new FormControl('hello again');
 
   constructor() { }
 

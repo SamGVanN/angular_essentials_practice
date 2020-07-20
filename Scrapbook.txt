@@ -56,7 +56,11 @@ Quand on crée un composant via la CLI, il est ajouté dans la bonne propriété
 
 
 
-------------------------
+------------------------------------------------------------------------
+
+DIRECTIVES
+----------
+
 
 DOM = représentation objet de notre HTML
 
@@ -98,10 +102,11 @@ Pipes = Fonction qui retourne un output à partir d'un input et qui peut être d
         
 
 
-------------------------
+------------------------------------------------------------------------
 
 
-Routing
+ROUTING
+--------
 
 RouterModule = ça permet à l'utilisateur de naviger sur l'application. Le routeur interprète une URL afin de rendre les composants pertinents
 C'est en utilisant correctement le routing qu'on empêche le navigateur de charger tout une page. Or en Angular on dev une SPA donc ce serait con de tout recharger sans raison.
@@ -120,14 +125,48 @@ Par contre faut MAJ noter module pour l'importer (le NgModule) OPTIONNEL parce q
 
 Une fois que c'est fait, on peut naviguer : http://localhost:4200/user
 
-------------------------
 
 
-Formulaires:
+------------------------------------------------------------------------
+
+FORMULAIRES:
+
+-----------
+directive ngModel
 Permet de lier un input à une variable, et d'actualiser cette variable en fonction de l'input entré par l'utilisateur
-
 Avant tout: importer le module (donc dans le app.module.ts)
 import { FormsModule } from '@angular/forms';
 puis ajouter FormsModule dans la aprtie imports du NgModule
 
 [(NgModel)] -> [] pour variable et () pour évent. En gros NgModel est une variable et l'évent c'est que le user rentre qq chose dans un input 
+
+-----------
+
+Le form model
+
+Modélisation d'un formulaire sous forme d'objet.
+Ce qui va nous permettre d'effectuer plusieurs actions telles que traquer les informations insérées par l'utilisateur ou alors, valider si ces informations sont correctes ou non.
+
+-----------
+
+2 approches
+
+Deux approches pour la gestion des formulaires en Angular
+
+Template-driven forms:
+    - Logique gérée depuis le template (Angular se débrouille avec le formulaire, il crée un objet et il le map avec le formulaire)
+        ---> Formulaires simples
+
+Reactive forms:
+    - Logique gérée depuis le contrôleur. (On crée nous mêmes cet objet formulaire dans notre composant et cela nous permettra d'avoir un petit peu plus de contrôle sur ce qui s'y passe)
+        ---> Formulaires complexes, potentiellement extensibles
+
+
+Déclarer un formulaire Reactive Forms:
+    FIRST import { ReactiveFormsModule } from '@angular/forms'; dans le app.module.ts
+    puis l'ajouter dans nos imports (NgModule)
+    Ensuite on peut l'utiliser:
+        1) Déclarer dans le composant les classes suivantes
+            -> FormControl : unité de base d'un reactive form
+            -> FormGroup / FormArray : permettent de grouper des FormControl
+        2) Lier les classes déclarées au template

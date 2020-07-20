@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +29,8 @@ const routes : Routes = [
     // AppRoutingModule -> noramelment on garde ça c'est un standard, une bonne pratique, puisqu'en fait AppRoutingModule
     //c'est un module qui import et export le RouterModule. Mais nous ici pour le tuto on s'en passe "parce qu'on a pas besoin de plusieurs modules"
     //-> clairement dans un vrai projet on garderait AppRoutingModule
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
