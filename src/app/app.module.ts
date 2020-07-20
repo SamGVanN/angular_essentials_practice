@@ -10,7 +10,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes : Routes = [
   {path: 'user', component: UserComponent},
-  {path: '', component: MainComponent} //on dit que notre route général c'est notre main
+  {path: 'home', component: MainComponent}
+  //{path:'/', component: MainComponent}// le "/" définit la route par défaut, générale. on cahnge juste ça pour que notre balise routerLinkActive (dans la page html) n'active par en permanence le bouton Acceuil dans la navbar
 ]
 
 

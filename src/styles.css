@@ -8,40 +8,70 @@
   }
 
 
-  h2{
-    font-family: 'Times New Roman' ;
-    color: #02a84d;
-  }
-  h3{
-    font-family: 'Times New Roman';
-    color: #02a84d;
-  }
+h2{
+  font-family: 'Times New Roman' ;
+  color: #02a84d;
+}
+h3{
+  font-family: 'Times New Roman';
+  color: #02a84d;
+}
 
-  p{
-    font-family: monospace;
-  }
-  /* Create three equal columns that floats next to each other */
+p{
+  font-family: monospace;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #4CAF50;
+}
+.routeActive{
+  background-color: #4CAF50;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 32%;
-    margin: 5px;
-    border: black solid 1px;
-    text-align: justify;
+  float: left;
+  width: 32%;
+  margin: 5px;
+  border: black solid 1px;
+  text-align: justify;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+}
 
 
 .button1 {background-color: #4CAF50;} /* Green */
