@@ -7,6 +7,7 @@
 
 
 <div class="exercice">
+    <h2>Gestion d'un click</h2>
     <div class="row">
         <div class="column">
             <button class="submitButton" (click)="userClick()">Click</button>
@@ -29,17 +30,21 @@
 
 
 <div class="exercice">
+    <h2>Directives Structurelles et Directives d'attributs</h2>
     <div *ngFor="let element of elements; let i" [ngClass]="{'highlightedAltern': i % 2 === 0}" > Hello {{ i }} </div>
 
     <div [ngClass]="{'highlighted': color}" >Directive</div>
 </div>
 
 <div class="exercice">
+    <h2>Les Pipes</h2>
+    <h3>Ici utilisation du pipe "Date" fournit par Angular</h3>
     <div> Date format standard : {{maDate  }} </div>
     <div> Date formatée via le pipe : {{maDate  | date:"short"}} </div>
 </div>
 
 <div class="exercice">
+    <h2>Routing</h2>
     <div class="row">
     
         <div class="column_images">

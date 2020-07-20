@@ -8,6 +8,18 @@
   }
 
 
+  h2{
+    font-family: 'Times New Roman' ;
+    color: #02a84d;
+  }
+  h3{
+    font-family: 'Times New Roman';
+    color: #02a84d;
+  }
+
+  p{
+    font-family: monospace;
+  }
   /* Create three equal columns that floats next to each other */
 .column {
     float: left;

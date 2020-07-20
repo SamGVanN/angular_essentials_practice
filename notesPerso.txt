@@ -107,6 +107,17 @@ RouterModule = ça permet à l'utilisateur de naviger sur l'application. Le rout
 C'est en utilisant correctement le routing qu'on empêche le navigateur de charger tout une page. Or en Angular on dev une SPA donc ce serait con de tout recharger sans raison.
     Configuration : on le configure dans le module avec un tableau d'objets Route. Le routeur supporte les URL dynamique 
 
+ng g c user pour créer un composant
+Dans le app.module.ts on crée un tableau d'objet de type 'Route'.
+Les objets de type 'Route' ont une propriété qui s'appelle « path », qui est extrêmement importante: c'est notre URL ; c'est l'URL à laquelle on souhaite associer le composant qui nous intéresse.
 
+Dans le app.component.html , ona une balise (qui est là parce qu'en créant le projet via le CLI on a dit oui pour ajouter un router)
+<router-outlet></router-outlet>
+Cette balise, le router-outlet, va marquer l'endroit où notre application mettra les composants liés à nos URL.
+Donc on a plus besoin d'appeler le <app-main> dans le app.component.html puisqu'on a configuré le router pour que par défaut la route soir notre mainComponent
 
+Par contre faut MAJ noter module pour l'importer (le NgModule) OPTIONNEL parce que de base c'est fait qd on crée le route via "ng g c ..." 
 
+Une fois que c'est fait, on peut naviguer : http://localhost:4200/user
+
+------------------------
