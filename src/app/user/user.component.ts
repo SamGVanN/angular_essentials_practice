@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import {DateService} from '../services/date.service';
 
 @Component({
   selector: 'app-user',
@@ -20,7 +21,10 @@ export class UserComponent implements OnInit {
   })
 
 
-  constructor() { }
+//dateService : DateService;
+  constructor(public dateService : DateService) { //public dateService permet d'instancier la variable, donc pas besoin de la créer juste avant, c'est lourd à faire
+    this.dateService = dateService;
+  }
 
 
   showForm(){
