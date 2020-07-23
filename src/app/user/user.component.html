@@ -40,5 +40,11 @@
 <div class="exercice" style="padding: 10px;">
     <h2>Injonction de dépendance</h2>
     <p>Service dateService, utilisé avec le pipe pour la date</p>
-    {{dateService.date | date:'short'}};
+    <div> Date (variable): {{dateService.date | date:'long'}};
+        <br>Correspont à la date d'instanciation du service
+    </div>
+    <br>
+    <div> Date (méthode): {{dateService.getDate() | date:'long'}}; 
+        <br>Correspont à la date lors de l'appel à la méthode du service (changer depage et revenir pour voir la différence)
+    </div>
 </div>

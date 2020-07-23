@@ -206,6 +206,8 @@ Créer un service:
 Injecter un service:
     - Passer le paramètre à notre constructeur (par ex, si mon component user doit utiliser le service, on ajoute le paramètre dans le constructeur de user)
 
+Un service est instancié une seule fois, une seule et unique. Preuve: voir la date qui change avec getDate mais jamais avec date.
+
 
 
 
