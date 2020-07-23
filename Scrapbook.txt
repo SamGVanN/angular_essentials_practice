@@ -170,3 +170,38 @@ Déclarer un formulaire Reactive Forms:
             -> FormControl : unité de base d'un reactive form
             -> FormGroup / FormArray : permettent de grouper des FormControl
         2) Lier les classes déclarées au template
+
+
+------------------------------------------------------------------------
+
+
+SERVICES
+
+- Catégorie de code qui repésente une fonctionnalité spécifique
+- Augmente la modularité et la factorisation de code
+- Angular : possibilité  de mettre ces services à disposition des autres classes par injonction de dépendances
+
+-----------
+
+Injection de dépendances:
+    - Pattern, structure de code, dans lequel une classe utilise une dépendance provenant d'une source externe, plutôt que de la créer elle-même
+L'idée va un petit peu plus loin que de simplement partager du code: le premier niveau de partage de code serait le suivant :
+nous mettons le code concernant notre fonctionnalité dans une classe particulière.
+Ici, nous allons un petit peu plus loin : c'est que non seulement, nous mettons dans une classe particulière, mais cette classe, nous allons l'instancier qu'une seule fois.
+Et nous injecterons cette classe instanciée dans tous les composants qui en ont besoin.
+
+    - Dans Angular, les dépendances sont fournies par une classe particulère d'objets: les injectors
+Injectables : Classe marquée d'un décorateur @Injectable .
+    Angular mettra cette classe à la disposition d'un injecteur.
+    Un injectabe peut être ensuite injecté dans une classe, par passage en paramètre du constructeur.
+    Plusieurs classes utiliseront une instance unique d'un service.
+
+
+    
+
+
+
+
+
+
+------------------------------------------------------------------------

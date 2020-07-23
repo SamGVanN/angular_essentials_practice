@@ -29,7 +29,7 @@
     </p>
 
     <form [formGroup]="userForm"> <!-- attention le nom de la directive est case sensitive, et c'est un f minuscule -->
-        <input formControlName="name" > <!-- on passe plus une ionstance de formControll mais on passe une string, name, donc pas besoin des crochets -->
+        <input formControlName="name" > <!-- on ne passe plus une instance de formControll mais on passe une string, name, donc pas besoin des crochets -->
         <input formControlName="email" >
         <input formControlName="age" >
         <button (click)="showForm()">Submit</button>
