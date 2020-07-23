@@ -196,8 +196,15 @@ Injectables : Classe marquée d'un décorateur @Injectable .
     Un injectabe peut être ensuite injecté dans une classe, par passage en paramètre du constructeur.
     Plusieurs classes utiliseront une instance unique d'un service.
 
-
     
+-----------
+
+Créer un service:
+    - commande : ng g s nomDuService
+    - Bonne pratique: mettre les services dans un dossier "service" ou "shared". Si plusieurs services, un dossier par service (2 fichiers)
+
+
+
 
 
 
