@@ -231,7 +231,7 @@ qui est un service fourni par le module « HttpClientModule », que nous avons i
 
 
     
------------
+------------------------------------------------------------------------
 Pattern d'observer/observable
     - Ce pattern d'observable/observer, ça sert à quoi ? Ça sert à gérer des données asynchrones,
     un flux de données qui va apparaître à un moment dans le temps mais on ne sait pas quand.
@@ -251,5 +251,20 @@ Observable.Subscribers = [...]
 
 Observable.Subscribe (observer)
 === Observable.Subscribers = [... , observer]
+
+
+Donc, là, vous avez l'idée de base du pattern observer/observable.
+A retenir: cela permet de gérer de multiples « callbacks » pour des événements asynchrones.
+Donc, après cette petite introduction consacrée au pattern, nous allons parler de la librairie qui implémente ce pattern en JavaScript qui s'appelle « RxJS ».
+
+
+------------------------------------------------------------------------
+
+
+RxJS
+https://www.learnrxjs.io
+
+Librairie qui implémente ce pattern observer/observable en JavaScript
+
 
 
