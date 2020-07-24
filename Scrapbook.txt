@@ -228,3 +228,28 @@ app.module.ts -> import {HttpClientModule} from '@angular/common/http'; + dans l
 Intégrer le service HttpClient:
 Injecter à l'intérieur du composant (ici "train") notre client « HttpClient »,
 qui est un service fourni par le module « HttpClientModule », que nous avons intégré à notre « app.module ».
+
+
+    
+-----------
+Pattern d'observer/observable
+    - Ce pattern d'observable/observer, ça sert à quoi ? Ça sert à gérer des données asynchrones,
+    un flux de données qui va apparaître à un moment dans le temps mais on ne sait pas quand.
+
+    D'un côté, nous avons l'observable qui constitue la source de données.
+    D'un autre côté, nous avons l'observeur qui, lui, constitue une réponse à cette source de données.
+
+Observable = source de données  (ce que le serveur, l'API suisse nous envoi)
+Observer = réponse à cette source de données (fonction à exécuter, le callback)
+
+/!\ Dans RxJS, l'observer ne sera pas une fonction à exécuter,
+mais un objet contenant différentes fonctions ou plutôt
+différentes méthodes qui seront exécutées en fonction de la réponse de notre source.
+
+
+Observable.Subscribers = [...]
+
+Observable.Subscribe (observer)
+=== Observable.Subscribers = [... , observer]
+
+
