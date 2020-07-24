@@ -268,3 +268,17 @@ Librairie qui implémente ce pattern observer/observable en JavaScript
 
 
 
+------------------------------------------------------------------------
+
+Conclure ce cours sur Angular
+
+Nous arrivons à présent au terme de notre formation sur Angular.
+Outre les éléments de TypeScript et de JavaScript ES6,
+nous avons vu en premier lieu comment découper notre application en briques de base, à savoir les composants.
+Nous avons vu ensuite comment structurer cette application via des directives comme celle-ci qui nous a permis
+d'itérer sur un élément ng ou via le routeur qui nous permet de faire apparaître ou disparaître des composants
+en fonction de l'URL. Nous nous sommes ensuite intéressés au service qui permet de mutualiser du code et au
+formulaire qui permet l'interaction avec l'utilisateur. Enfin, nous nous sommes intéressés à la communication
+avec un serveur ainsi que à RxJS et au pattern observable observer. Vous disposez à présent des briques applicatives
+de base pour créer une application Angular fonctionnelle. J'espère que vous avez apprécié cette formation et en attendant,
+je vous souhaite beaucoup de plaisir à travailler avec le framework Angular.
