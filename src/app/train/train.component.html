@@ -1,0 +1,13 @@
+<h1>Utilisation de l'API des transports Suisse</h1>
+<p>http://transport.opendata.ch/docs.html</p>
+
+
+
+<div>
+    <h2>Utilisation de HttpClient avec un get sur l'API suisse</h2>
+    <p> <span style="font-weight: bold;"> On utilise le pipe json pour voir le résultat obtenu avec </span>
+        http://transport.opendata.ch/v1/connections?from=Lausanne&to=Genève</p>
+    <div>
+        {{trainData | json}}
+    </div>
+</div>

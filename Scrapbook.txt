@@ -211,9 +211,20 @@ Un service est instancié une seule fois, une seule et unique. Preuve: voir la d
 
 
 
-
-
-
-
-
 ------------------------------------------------------------------------
+
+
+Le service HttpClient
+
+Les applciations front communiquent avec un serveur via le protocole HTTP:
+    - Interface XMLHttpRequest, API fetch()
+HttpClient est un service proposé par Angular qui offre une API HTTP simplifiée:
+    - Requêtes et réponse typées, interception, gestion des erreurs, etc.
+
+Intégrer HttpClient dans notre application:
+app.module.ts -> import {HttpClientModule} from '@angular/common/http'; + dans la section des imports du @NgModule
+
+
+Intégrer le service HttpClient:
+Injecter à l'intérieur du composant (ici "train") notre client « HttpClient »,
+qui est un service fourni par le module « HttpClientModule », que nous avons intégré à notre « app.module ».
